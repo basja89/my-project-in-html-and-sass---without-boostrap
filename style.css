@@ -1,0 +1,460 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+* {
+  box-sizing: border-box; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row:after {
+  clear: both; }
+
+section {
+  padding: 40px 0 0 0; }
+
+body {
+  margin: 0;
+  overflow-x: hidden; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+[class*="col-"] {
+  float: left;
+  Min-height: 1px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+/* variables */
+/* fonts family */
+/* border in gallery */
+/* NAV */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  nav .inside-menu {
+    display: flex;
+    position: absolute;
+    background: transparent;
+    background: rgba(54, 25, 25, 0.5);
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    top: 60px;
+    right: -200px;
+    transition: 0.3s transform ease-in-out;
+    transform: translateX(100%); }
+    nav .inside-menu ul {
+      padding: 30px 0 0 0; }
+  nav .trigger:hover ~ .inside-menu, nav .inside-menu:hover {
+    transform: translateX(-200px); }
+  nav li {
+    list-style-type: none;
+    margin: 30px 0 0 10px; }
+    nav li a {
+      color: black;
+      font-weight: bold;
+      font-family: "lato:700", sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 22px; }
+      nav li a:hover {
+        text-decoration: underline;
+        font-size: 24px; }
+  nav .trigger {
+    width: 40px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-top: 5px solid #fff;
+    position: relative;
+    margin-right: 2%;
+    margin-top: 1%; }
+    nav .trigger:before, nav .trigger:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 5px solid #fff;
+      transform: translateY(10px); }
+    nav .trigger:after {
+      transform: translateY(25px); }
+    nav .trigger:hover {
+      border-top: 5px solid red; }
+    nav .trigger:hover:after {
+      border-top: 5px solid red; }
+    nav .trigger:hover:before {
+      border-top: 5px solid red; }
+
+/* JUMBOTRON */
+.jumbotron {
+  background-image: url(https://zapodaj.net/images/404f5fbe26f93.jpg);
+  background-size: cover;
+  height: 1072px;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0; }
+  .jumbotron h2 {
+    font-size: 53px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 3% 0 0 0;
+    font-family: "lato", sans-serif;
+    letter-spacing: 8px; }
+  .jumbotron p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: "lato:300", sans-serif;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-top: 2%; }
+  .jumbotron .logo {
+    margin-left: 48%;
+    margin-top: 15%; }
+  .jumbotron .down {
+    margin-left: 49%;
+    margin-top: 9%; }
+
+/* ABOUT-US */
+.about-us {
+  height: 500px;
+  margin: 0; }
+  .about-us .text {
+    border: black solid 2px;
+    position: relative;
+    margin-top: 8%;
+    padding: 6%; }
+    .about-us .text h2 {
+      position: absolute;
+      top: -24%;
+      left: 37%;
+      background-color: white;
+      font-size: 34px;
+      font-family: "lato:700", sans-serif;
+      text-transform: uppercase;
+      padding: 26px; }
+    .about-us .text p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: #3c3c3c; }
+
+/* SERVICES */
+.services {
+  background-image: url(https://zapodaj.net/images/b4a99b51fe489.png);
+  height: 500px;
+  background-size: cover; }
+  .services .text1 {
+    border: white solid 2px;
+    border-top: none;
+    position: relative;
+    margin-top: 8%;
+    padding: 6%; }
+    .services .text1:before {
+      content: "";
+      width: 38%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 0%;
+      left: 0%; }
+    .services .text1:after {
+      content: "";
+      width: 38%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 0%;
+      right: 0%; }
+    .services .text1 h2 {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 176px;
+      top: -7%;
+      background-color: transparent;
+      font-size: 34px;
+      font-family: "lato:700", sans-serif;
+      text-transform: uppercase;
+      color: white; }
+    .services .text1 p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: white; }
+
+/* WHAT WE DO */
+.what-we-do {
+  margin: 0; }
+  .what-we-do .text3 {
+    border: black solid 2px;
+    position: relative;
+    margin-top: 8%;
+    padding: 6%;
+    height: 1180px; }
+    .what-we-do .text3 h2 {
+      position: absolute;
+      top: -6%;
+      left: 37%;
+      background-color: white;
+      font-size: 34px;
+      font-family: "lato:700", sans-serif;
+      text-transform: uppercase;
+      color: black;
+      padding: 26px; }
+  .what-we-do .first {
+    margin-top: 6%; }
+    .what-we-do .first p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      line-height: 26px;
+      color: #3c3c3c; }
+    .what-we-do .first img {
+      margin-left: 45%; }
+    .what-we-do .first h4 {
+      text-align: center;
+      font-family: "lato", sans-serif;
+      font-size: 20px;
+      color: #3c3c3c;
+      letter-spacing: 2px; }
+  .what-we-do .second {
+    margin-top: 10%; }
+    .what-we-do .second p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      line-height: 26px;
+      color: #3c3c3c; }
+    .what-we-do .second img {
+      margin-left: 45%; }
+    .what-we-do .second h4 {
+      text-align: center;
+      font-family: "lato", sans-serif;
+      font-size: 20px;
+      color: #3c3c3c;
+      letter-spacing: 2px; }
+  .what-we-do .third {
+    margin-top: 10%; }
+    .what-we-do .third p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      line-height: 26px;
+      color: #3c3c3c; }
+    .what-we-do .third img {
+      margin-left: 45%; }
+    .what-we-do .third h4 {
+      text-align: center;
+      font-family: "lato", sans-serif;
+      font-size: 20px;
+      color: #3c3c3c;
+      letter-spacing: 2px; }
+
+/* GALLERY */
+.gallery .cl1 {
+  background-image: url(https://zapodaj.net/images/c0d88011b60d5.png);
+  height: 237px;
+  border: white solid 8px; }
+.gallery .cl2 {
+  background-image: url(https://zapodaj.net/images/63247b137c33d.png);
+  height: 237px;
+  background-size: cover;
+  border: white solid 8px;
+  position: relative; }
+  .gallery .cl2 h2 {
+    font-size: 36px;
+    font-family: "lato", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    left: 3%;
+    bottom: 1%; }
+.gallery .cl3 {
+  background-image: url(https://zapodaj.net/images/a71abdc477286.png);
+  height: 237px;
+  border: white solid 8px; }
+.gallery .cl4 {
+  background-image: url(https://zapodaj.net/images/a71abdc477286.png);
+  height: 237px;
+  border: white solid 8px; }
+.gallery .cl5 {
+  background-image: url(https://zapodaj.net/images/c0d88011b60d5.png);
+  height: 237px;
+  background-size: cover;
+  border: white solid 8px;
+  position: relative; }
+  .gallery .cl5 h2 {
+    font-size: 36px;
+    font-family: "lato", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    left: 3%;
+    bottom: 1%; }
+.gallery .cl6 {
+  background-image: url(https://zapodaj.net/images/63247b137c33d.png);
+  height: 237px;
+  border: white solid 8px; }
+
+/* CONTACT */
+.contact {
+  height: 500px; }
+  .contact .text1 {
+    border: black solid 2px;
+    position: relative;
+    margin-top: 8%;
+    padding: 6%; }
+    .contact .text1 h2 {
+      position: absolute;
+      top: -26%;
+      left: 37%;
+      background-color: white;
+      font-size: 34px;
+      font-family: "lato:700", sans-serif;
+      text-transform: uppercase;
+      color: black;
+      padding: 26px; }
+    .contact .text1 p {
+      font-family: "lato", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      line-height: 26px;
+      margin-bottom: 5%; }
+    .contact .text1 .btn {
+      background-color: #3c3c3c;
+      border: #3c3c3c;
+      color: white;
+      font-size: 16px;
+      font-family: "lato", sans-serif;
+      padding: 2%;
+      width: 207px;
+      height: 51px;
+      margin-left: 42%; }
+      .contact .text1 .btnhover {
+        background-color: white;
+        color: #3c3c3c; }
+
+/* MEDIA QUERIES */
+@media(max-width: 767px) {
+  .jumbotron .logo {
+    margin-left: 42%; }
+  .jumbotron h2 {
+    margin-top: 13%; }
+  .jumbotron p {
+    margin-top: 18%; }
+  .jumbotron .down {
+    margin-top: 22%;
+    margin-left: 47%; }
+  .jumbotron .menu .trigger {
+    margin-top: 2%;
+    margin-right: 3%; }
+
+  .about-us .text h2 {
+    font-size: 27px;
+    top: -17%;
+    left: 21%; }
+
+  .services .text1 h2 {
+    font-size: 27px;
+    top: -5%; }
+  .services .text1:before, .services .text1:after {
+    width: 22%; }
+
+  .what-we-do .text3 {
+    height: auto; }
+    .what-we-do .text3 h2 {
+      font-size: 27px;
+      top: -5%;
+      left: 20%; }
+  .what-we-do .first img {
+    margin-left: 38%; }
+  .what-we-do .second img {
+    margin-left: 38%; }
+  .what-we-do .third img {
+    margin-left: 38%; }
+
+  .contact .text1 h2 {
+    font-size: 27px;
+    top: -27%;
+    left: 21%; }
+  .contact .text1 .btn {
+    margin-left: 34%; } }
+@media(min-width: 768px) and (max-width: 991px) {
+  .about-us .text h2 {
+    font-size: 29px;
+    top: -23%; }
+
+  .services .text1 h2 {
+    font-size: 29px;
+    top: -6%; }
+  .services .text1:before {
+    width: 35%; }
+
+  .what-we-do .text3 {
+    height: auto; }
+    .what-we-do .text3 h2 {
+      font-size: 29px;
+      top: -6%; }
+  .what-we-do .first img {
+    margin-left: 38%; }
+  .what-we-do .second img {
+    margin-left: 38%; }
+  .what-we-do .third img {
+    margin-left: 38%; }
+
+  .contact .text1 h2 {
+    font-size: 29px;
+    top: -27%; }
+  .contact .text1 .btn {
+    margin-left: 33%; } }
+@media(min-width: 992px) and (max-width: 1199px);
+
+/*# sourceMappingURL=style.css.map */
